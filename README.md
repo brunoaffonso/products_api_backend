@@ -1,4 +1,4 @@
-# Products
+# Products API - Backend
 ![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Development-yellow)
 
 ## Description
@@ -56,6 +56,7 @@ docker-compose up
 <a href="https://djangoproject.com/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django" width="40" height="40"/></a>
 <a href="https://reactjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" width="40" height="40"/></a>
 <a href="https://www.docker.com/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker" width="40" height="40"/></a>
+<a href="https://www.postgresql.org/"> <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSql" width="40" height="40"/></a>
 </div>
 
 ## License
