@@ -1,4 +1,6 @@
 from django.http import Http404
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import IsAuthenticated
 from .models import Product
 from .serializers import ProductSerializer, ProductListSerializer
 from rest_framework.views import APIView
@@ -6,6 +8,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 
+@permission_classes([IsAuthenticated])
 class ProductList(APIView):
     """
     List all products
@@ -23,6 +26,7 @@ class ProductList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+@permission_classes([IsAuthenticated])
 class ProductDatail(APIView):
     """
     Read, Update and Delete Products

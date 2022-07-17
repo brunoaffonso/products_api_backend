@@ -19,6 +19,7 @@ services:
     image: brunoaffonso/products-backend-django
     command: bash -c "
       python manage.py migrate
+      && python manage.py initadmin
       && python manage.py runserver 0.0.0.0:8001
       "
     ports:

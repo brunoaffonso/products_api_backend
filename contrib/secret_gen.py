@@ -2,8 +2,12 @@
 """
 Django SECRET_KEY generator.
 """
-from django.utils.crypto import get_random_string
+import random
 
 
-chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
-print(get_random_string(50, chars))
+def generate_secret_key(lenght=50):
+    chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
+    return ''.join(random.choice(chars) for i in range(lenght))
+
+
+print(generate_secret_key())
